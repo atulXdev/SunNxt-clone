@@ -674,6 +674,19 @@ body {
     padding: 30px 0;
 }
 
+@media (max-width: 768px) {
+    .subscribe-section {
+        padding: 20px 0;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscribe-section {
+        padding: 15px 0;
+    }
+}
+
 .subscribe-container {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -712,6 +725,8 @@ body {
     top: 20px;
     right: 20px;
     width: auto;
+    min-width: 60px;
+    min-height: 40px;
 }
 
 .back-btn:hover,
@@ -1055,7 +1070,7 @@ body {
 
 @media (max-width: 1200px) {
     .pricing-plans {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .subscribe-container {
@@ -1064,6 +1079,14 @@ body {
     
     .subscribe-sidebar {
         display: none;
+    }
+    
+    .subscribe-main {
+        padding: 30px 20px;
+    }
+    
+    .annual-premium {
+        padding: 20px;
     }
 }
 
@@ -1095,6 +1118,13 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .pricing-plans {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         gap: 15px;
@@ -1123,6 +1153,41 @@ body {
     .footer-content {
         grid-template-columns: 1fr;
     }
+    
+    .subscribe-main {
+        padding: 20px 15px;
+        position: relative;
+    }
+    
+    .pricing-card {
+        padding: 25px 15px;
+    }
+    
+    .plan-name {
+        font-size: 20px;
+    }
+    
+    .annual-premium h3 {
+        font-size: 18px;
+    }
+    
+    .price-main {
+        font-size: 28px;
+    }
+    
+    .promo-section {
+        flex-direction: column;
+    }
+    
+    .btn-apply-code {
+        width: 100%;
+    }
+    
+    .skip-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1140,6 +1205,114 @@ body {
     
     .section-title {
         font-size: 20px;
+    }
+    
+    .subscribe-container {
+        padding: 0 10px;
+    }
+    
+    .subscribe-main {
+        padding: 15px 10px;
+    }
+    
+    .pricing-card {
+        padding: 20px 12px;
+    }
+    
+    .plan-name {
+        font-size: 18px;
+    }
+    
+    .plan-duration {
+        font-size: 14px;
+    }
+    
+    .plan-devices {
+        font-size: 12px;
+    }
+    
+    .feature-row {
+        font-size: 13px;
+    }
+    
+    .plan-price-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .annual-premium {
+        padding: 15px;
+    }
+    
+    .annual-premium h3 {
+        font-size: 16px;
+    }
+    
+    .price-main {
+        font-size: 24px;
+    }
+    
+    .price-period {
+        font-size: 14px;
+    }
+    
+    .price-original {
+        font-size: 16px;
+    }
+    
+    .annual-effective {
+        font-size: 12px;
+    }
+    
+    .btn-selected {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    
+    .promo-input {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    
+    .btn-apply-code {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .btn-proceed {
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .skip-btn {
+        top: 10px;
+        right: 10px;
+        font-size: 14px;
+    }
+    
+    .header-actions .btn-subscribe {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .logo img {
+        height: 35px;
+        width: 100px;
+    }
+    
+    .top-pick-badge,
+    .recommended-badge {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+    
+    .top-pick-badge {
+        top: -10px;
+    }
+    
+    .recommended-badge {
+        top: -10px;
+        right: 10px;
     }
 }
 
